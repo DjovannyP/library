@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="intro">
+        <H2>My Library</H2> 
+        <!-- display button -->
+        <Button>NEW BOOK</Button>
+    </div>
+    
+
+    <div class="container">
+        <form action="/submit" method="post">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" placeholder="Harry Potter" required>
+            </div> 
+
+            <div>
+                <label for="author">Author</label>
+                <input type="text" placeholder="J. K. Rowling" required>
+            </div>
+            <div>
+                <label for="author">Pages</label>
+                <input type="text" placeholder="700" required>
+            </div>
+            <fieldset>
+                <legend>Have you read this Book?</legend>
+                <label>
+                    <input type="radio" name="read" value="yes" checked>
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="read" value="no">
+                    No
+                </label>
+            </fieldset>
+
+        </form>
+        <button>Submit</button>
+
+    </div>
+</body>
+</html>

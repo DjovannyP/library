@@ -1,14 +1,26 @@
 
 body{
+    margin: 0;
+    padding: 0;
     display: flex;
+    background: #eee7ce;
 }
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 600px;
-    height: 550px;
+    width: 420px;
+    height: 360px;
     border: darkslategrey solid 2px;
     background: skyblue;
     border-radius: 15px;
@@ -16,7 +28,9 @@ body{
     margin-top: 15px;
 
 }
-
+.hidden{
+    display: none;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -27,13 +41,12 @@ form {
     
 }
 
-form input[type="text"] {
-    width: 20rem;
+form input:not([type="radio"]){
+    min-width: 20rem;
     background: rgb(247, 221, 225);
     border: none;
-    height: 30px;
+    height: 32px;
     border-radius: 5px;
-    margin-left: 10px;
 }
 
 button {
@@ -55,4 +68,13 @@ fieldset {
     margin-top: 30px;
     margin-left: 20px;
     border: none;
+}
+
+.right {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background: #ffeead;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library App</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -30,27 +31,15 @@
                     <label for="author">Pages:</label>
                     <input type="number" placeholder="700" required>
                 </div>
-                <fieldset>
-                    <legend>Have you read this Book?</legend>
-                    <label>
-                        <input type="radio" name="read" value="yes" checked>
-                        Yes
-                    </label>
-                    <label>
-                        <input type="radio" name="read" value="no">
-                        No
-                    </label>
-                </fieldset>
+                <label for="read">Have you read this Book?</label>
+                <input type="checkbox" id="read">
+        
                 <button type="submit">Add Book</button>
             </form>
         
         </div>
     </div>
     <div class="right">
-        <div class="book__display">
-            
-        </div>
-        
     </div>
     
 </body>
